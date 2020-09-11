@@ -1,16 +1,16 @@
-.TH man 2 "04 May 2015" "0.32" "holberton man page"
+.TH man 2 "10 December 1945" "0.32" "eniac man page"
 .SH NAME
-.B holberton - become a full-stack software engineer.
+.B eniac - the first electronic general-purpose digital computer.
 .SH SYNOPSIS
-holberton [STUDENTNAME]
+eniac
 .SH DESCRIPTION
-Holberton School is a project-based alternative to college for the next generation of software engineers.
+Eniac was a Turing-complete, and able to solve "a large of numerical problems" through reporgramming.
 .SH OPTIONS
-.B holberton
+.B eniac  does not take any options.
 does not take any options. However, you can supply studentname.
 .SH SEE ALSO
-.I peerlearning(2), projectbased(2), fullstack(2), Betty(1)
+ENIAC could be programmed to perform complex sequences of operations(2), icluding loops(2), branches(2), and subroutines(2).
 .SH BUGS
 No known bugs.
 .SH AUTHOR
-Julien Barbier, Sylvain Kalache, Sophie Barbier, Guillaume Salva, Kris Bredemeier, Julien Cyr, Alex Gautier and all the Holberton mentors
+University of Pennsylvania.
