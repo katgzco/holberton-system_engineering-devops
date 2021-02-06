@@ -2,14 +2,14 @@
 #Bash script that gives you information about the holbertonschool file.
 
 File="holbertonschool"
-if [[ -e "$File" ]]; then
-		echo "holbertonschool file exists"
-		if [[ -s "$File" ]]; then
+if [ -e "$File" ]; then
+		echo "holbertonschool file exist"
+		if [ -s "$File" ]; then
 			echo "holbertonschool file is not empty"
 		else
 			echo "holbertonschool file is empty"
 		fi
-		if [[ -f "$File" ]]; then
+		if [ -f "$File" ]; then
 			echo "holbertonschool is a regular file"
 		fi
 	else
