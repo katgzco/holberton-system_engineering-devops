@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that displays The content of the current directory in list format after the dash
+
+files_recived=$(ls)
+for file in $files_recived;
+do
+	new_name_of_file=$(echo "$file" | cut -d "-" -f 2)
+	echo "$new_name_of_file"
+done
