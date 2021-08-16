@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# SSH configuration file for the local SSH client
+Host *
+	IdentityFile ~/.ssh/holberton
