@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+sudo sed -i '/http {/a add_header X-Served-By $hostname;' /etc/nginx/nginx.conf
+sudo nginx -s reload
+
