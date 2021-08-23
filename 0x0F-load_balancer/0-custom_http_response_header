@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Configure Nginx server 2 web-02 to be identical to web-01 and add header
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+sudo sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=YvVonQ7LUJ0 permanent;' /etc/ngin>echo "Ceci n'est pas une page" > /var/www/html/error404.html
+sudo sed -i '/listen 80 default_server;/a error_page 404 /error404.html;' /etc/nginx/sites-available/default
+#add header
+sudo sed -i '/http {/a add_header X-Served-By ${HOSTNAME};' /etc/nginx/nginx.conf
+sudo service ngnix start
+
