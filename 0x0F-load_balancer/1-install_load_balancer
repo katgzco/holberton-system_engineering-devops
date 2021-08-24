@@ -4,9 +4,9 @@
 apt-get y update
 apt-get -y install haproxy
 
-echo "ENABLED=1" >> /etc/default/haproxy
+echo "ENABLED=1" >> sudo /etc/default/haproxy
 
-sudo tee -a /etc/haproxy/test.cfg > /dev/null <<END
+sudo tee -a /etc/haproxy/haproxy.cfg > /dev/null <<END
 frontend http_front
         bind *:80
         mode http
