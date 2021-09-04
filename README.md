@@ -1,7 +1,7 @@
 ![Holberton](holberton.png)
 
-# Holbertonschool-higher_level_programming
-
+# Holberton-system_engineering-devops
+Bash scripts, network, web infraestructure, configure managment, Nginx web server
 
 #	Directory	Content
 
