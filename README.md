@@ -1,7 +1,7 @@
 ![Holberton](holberton.png)
 
 # Holberton-system_engineering-devops
-Bash scripts, network, web infraestructure, configure managment, Nginx web server
+Bash scripts, network, web infrastructure, configure management, Nginx web server.
 
 #	Directory	Content
 
