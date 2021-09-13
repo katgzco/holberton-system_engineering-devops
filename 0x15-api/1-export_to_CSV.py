@@ -18,11 +18,11 @@ if __name__ == "__main__":
     user_id = sys.argv[1]
     username = user.get("name")
 
-    filename = "{}.csv".format(sys.argv[1])
+    filename = "{}.csv".format(user_id)
     with open(filename, mode='w') as file:
-        file = csv.writer(file, delimiter=',',
-                          quoting=csv.QUOTE_ALL)
+        writer = csv.writer(file, delimiter=',',
+                            quoting=csv.QUOTE_ALL)
 
         for task in todo:
-            file.writerow([user_id, username, task.get(
+            writer.writerow([user_id, username, task.get(
                 "completed"), task.get("title")])
