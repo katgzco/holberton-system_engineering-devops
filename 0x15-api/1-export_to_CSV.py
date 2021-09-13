@@ -18,7 +18,8 @@ if __name__ == "__main__":
     user_id = sys.argv[1]
     username = user.get("name")
 
-    with open("USER_ID.csv", mode='w') as file:
+    filename = "{}.csv".format(sys.argv[1])
+    with open(filename, mode='w') as file:
         file = csv.writer(file, delimiter=',',
                           quoting=csv.QUOTE_ALL)
 
