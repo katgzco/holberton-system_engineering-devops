@@ -6,6 +6,9 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
+    """Using what you did in the task #0, extend your Python
+    script to export data in the JSON format.
+    """
 
     completed_task = list()
 

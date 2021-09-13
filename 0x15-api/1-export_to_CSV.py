@@ -6,6 +6,9 @@ import requests
 import sys
 
 if __name__ == "__main__":
+    """Using what you did in the task #0, extend your Python script
+    to export data in the CSV format.
+    """
 
     completed_task = list()
 

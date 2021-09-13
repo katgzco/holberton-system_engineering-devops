@@ -6,7 +6,9 @@ import requests
 import sys
 
 if __name__ == "__main__":
-
+    """ Python script that, using this REST API, for a given employee ID,
+    returns information about his/her TODO list progress.
+    """
     completed_task = list()
 
     url = "https://jsonplaceholder.typicode.com/"
