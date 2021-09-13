@@ -16,10 +16,10 @@ if __name__ == "__main__":
     user = requests.get(url + "users/{}".format(sys.argv[1])).json()
     todo = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
     user_id = sys.argv[1]
-    username = user.get("name")
+    username = user.get("username")
 
     filename = "{}.csv".format(user_id)
-    with open(filename, mode='w') as file:
+    with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file, delimiter=',',
                             quoting=csv.QUOTE_ALL)
 
