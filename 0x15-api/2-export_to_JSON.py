@@ -19,10 +19,14 @@ if __name__ == "__main__":
 
     filename = "{}.json".format(sys.argv[1])
 
+    user_tasks = list()
+    for task in todo:
+        user_tasks.append({
+            "task": task.get("title"),
+            "completed": task.get("completed"),
+            "username": username
+        })
+    user_tasks = {user_id: user_tasks}
+
     with open(filename, mode='w') as file:
-        for task in todo:
-            json.dump({user_id: [{
-                "task": task.get("title"),
-                "completed": task.get("completed"),
-                "username": username
-            }]}, file)
+        json.dump(user_tasks, file)
