@@ -15,7 +15,7 @@ if __name__ == "__main__":
     user = requests.get(url + "users/{}".format(sys.argv[1])).json()
     todo = requests.get(url + "todos", params={"userId": sys.argv[1]}).json()
     user_id = sys.argv[1]
-    username = user.get("name")
+    username = user.get("username")
 
     filename = "{}.json".format(sys.argv[1])
 

@@ -23,7 +23,7 @@ if __name__ == "__main__":
         employe = list()
         for task in todo:
             employe.append({
-                "username": user.get("name"),
+                "username": user.get("username"),
                 "task": task.get("title"),
                 "completed": task.get("completed"),
             })
